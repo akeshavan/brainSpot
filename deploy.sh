@@ -7,7 +7,7 @@ if [[ $TRAVIS_BRANCH == "master" && $TRAVIS_PULL_REQUEST == "false" ]]; then
 echo "Starting to update gh-pages\n"
 
 #copy data we're interested in to other place
-cp -R dist $HOME/dist
+cp -R SwipesForScience/dist $HOME/dist
 
 #go to home and setup git
 cd $HOME
@@ -27,9 +27,9 @@ echo "[View live](https://${GH_USER}.github.io/${GH_REPO}/)" > README.md
 #add, commit and push files
 git add -f .
 git commit -m "Travis build $TRAVIS_BUILD_NUMBER"
-git push -fq origin master > /dev/null
+git push -fq origin gh-pages > /dev/null
 
-echo "Done updating master\n"
+echo "Done updating gh-pages\n"
 
 else
  echo "Skipped updating gh-pages, because build is not triggered from the master branch."
