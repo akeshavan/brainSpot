@@ -7,7 +7,7 @@ export default {
   // each time the app is run, it will check this manifest and update the firebase database
   // if new entries are there, they will be added, and entries that aren't in the manifest
   // but are in the firebase database will be *removed*
-  manifestUrl: 'https://cdn.rawgit.com/SwipesForScience/testConfig/master/bsHbnManifest.json',
+  manifestUrl: 'https://cdn.rawgit.com/akeshavan/brainSpot/master/dataManifest.json',
   // 'https://cdn.rawgit.com/SwipesForScience/testConfig/master/whaledrManifest.json',
   // 'https://cdn.rawgit.com/SwipesForScience/testConfig/master/textWidgetManifest.json',
 
@@ -47,22 +47,22 @@ export default {
     title: 'brainSpot',
     tagline: 'Help neuroscientists study the brain',
     // background image on Homepage
-    backgroundUrl: 'https://cdn.rawgit.com/SwipesForScience/testConfig/master/SwipesForScience.svg',
+    backgroundUrl: 'https://cdn.rawgit.com/akeshavan/brainSpot/master/images/SwipesForScience.svg',
   },
 
   // Play configuration
   play: {
-    blankImage: 'https://cdn.rawgit.com/SwipesForScience/testConfig/master/undraw_blank_canvas.svg',
+    blankImage: 'https://cdn.rawgit.com/akeshavan/brainSpot/master/images/undraw_blank_canvas.svg',
 
   },
 
   // Chats configuration
   chats: {
-    blankImage: 'https://cdn.rawgit.com/SwipesForScience/testConfig/master/undraw_no_data.svg',
+    blankImage: 'https://cdn.rawgit.com/akeshavan/brainSpot/master/images/undraw_no_data.svg',
   },
 
   // Profile configuration
   profile: {
-    blankImage: 'https://cdn.rawgit.com/SwipesForScience/testConfig/master/undraw_chatting.svg',
+    blankImage: 'https://cdn.rawgit.com/akeshavan/brainSpot/master/images/undraw_chatting.svg',
   },
 };
