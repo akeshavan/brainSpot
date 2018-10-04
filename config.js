@@ -2,7 +2,7 @@ export default {
 
   // if set to true, the user will be routed to /tutorial instead of /play if
   // they haven't taken a tutorial
-  needsTutorial: false,
+  needsTutorial: true,
 
   // each time the app is run, it will check this manifest and update the firebase database
   // if new entries are there, they will be added, and entries that aren't in the manifest
@@ -64,5 +64,68 @@ export default {
   // Profile configuration
   profile: {
     blankImage: 'https://cdn.rawgit.com/akeshavan/brainSpot/master/images/undraw_chatting.svg',
+  },
+
+  // your app's tutorial page
+  // describe your problem and the way you want people to annotate
+  tutorial: {
+    // there is only 1 available custom animiation right now, and its 'Bubbles'
+    // customBackgroundAnimation: 'Bubbles',
+    // steps have 2 parts, the intro and examples. In the intro you provide
+    // text and images. In the examples, you provide text, data pointers, and tutorial steps
+    // that the widget will display
+    steps: {
+      intro: [
+        {
+          // keep the text really short
+          text: 'we want to learn about mental health',
+          image: 'https://cdn.rawgit.com/akeshavan/brainSpot/master/images/undraw_doctor_kw5l.svg',
+        },
+        {
+          text: 'most mental disorders are diagnosed between ages 5-20',
+          image: 'https://cdn.rawgit.com/akeshavan/brainSpot/master/images/undraw_fatherhood_7i19.svg',
+        },
+        {
+          text: 'the healthy brain network is collecting brain MRI scans \n of adolescents with mental health disorders',
+          image: 'https://cdn.rawgit.com/akeshavan/brainSpot/master/images/mri-1485929.svg',
+        },
+        {
+          text: 'can brain images help us understand mental health?',
+          image: 'https://s3-us-west-2.amazonaws.com/akeshavan-mindcontrol/hbnSplat/sub-NDARLF283KJX/tiles/base_sag_123.png',
+        },
+        {
+          text: 'to find out, scientists need your help \n to measure the brain',
+          image: 'https://cdn.rawgit.com/akeshavan/brainSpot/master/images/SwipesForScience.svg',
+        },
+        {
+          text: 'here is an mri of the the head',
+          image: 'https://cdn.rawgit.com/akeshavan/brainSpot/00d3b78e/images/brainAlone.png',
+        },
+        {
+          text: 'a computer has colored the brain pixels red \n we count the pixels to measure the volume',
+          image: 'https://cdn.rawgit.com/akeshavan/brainSpot/00d3b78e/images/brainWithMask.png',
+        },
+        {
+          text: 'but sometimes, the computer messes up \n and colors outside the brain',
+          image: 'https://cdn.rawgit.com/akeshavan/brainSpot/18266a4f/images/outOfBounds01.png',
+        },
+        {
+          text: 'so we need your help to spot \n the problem areas',
+          image: 'https://cdn.rawgit.com/akeshavan/brainSpot/6f75832b/images/outOfBounds02.png',
+        },
+      ],
+      examples: [
+        // {
+        //   text: `if you're not sure, click 'help' \n to discuss with scientists ${''}`,
+        //   pointer: 'OO4_HYVM1__YDH_2017_10_06T06_48_00',
+        //   answer: 0,
+        //   tutorialStep: 0,
+        // },
+        {
+          text: 'Are you ready to play?',
+          tutorialCompleted: true,
+        },
+      ],
+    },
   },
 };
