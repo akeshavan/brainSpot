@@ -1,0 +1,85 @@
+{
+  "needsTutorial": false,
+  "manifestUrl": "https://cdn.rawgit.com/akeshavan/brainSpot/master/dataManifest.json",
+  "widgetType": "ImageSplat",
+  "widgetProperties": {
+    "baseUrlTemplate": "https://s3-us-west-2.amazonaws.com/akeshavan-mindcontrol/hbnSplat/{0}/tiles/base_{1}.png",
+    "maskUrlTemplate": "https://s3-us-west-2.amazonaws.com/akeshavan-mindcontrol/hbnSplat/{0}/tiles/mask_{1}.png",
+    "contourUrlTemplate": "https://s3-us-west-2.amazonaws.com/akeshavan-mindcontrol/hbnSplat/{0}/tiles/contour_{1}.png",
+    "delimiter": "__"
+  },
+  "betaMode": false,
+  "firebaseKeys": {
+    "apiKey": "AIzaSyBGzjnGrXRSkE1Tk61rgR49TN5PnHqOIU4",
+    "authDomain": "brainsplat12.firebaseapp.com",
+    "databaseURL": "https://brainsplat12.firebaseio.com",
+    "projectId": "brainsplat12",
+    "storageBucket": "",
+    "messagingSenderId": "574942180600"
+  },
+  "app": {
+    "navbarVariant": "secondary"
+  },
+  "home": {
+    "title": "brainSpot",
+    "tagline": "Help neuroscientists study the brain",
+    "backgroundUrl": "https://cdn.rawgit.com/akeshavan/brainSpot/master/images/SwipesForScience.svg"
+  },
+  "play": {
+    "blankImage": "https://cdn.rawgit.com/akeshavan/brainSpot/master/images/undraw_blank_canvas.svg"
+  },
+  "chats": {
+    "blankImage": "https://cdn.rawgit.com/akeshavan/brainSpot/master/images/undraw_no_data.svg"
+  },
+  "profile": {
+    "blankImage": "https://cdn.rawgit.com/akeshavan/brainSpot/master/images/undraw_chatting.svg"
+  },
+  "tutorial": {
+    "steps": {
+      "intro": [
+        {
+          "text": "we want to learn about mental health",
+          "image": "https://cdn.rawgit.com/akeshavan/brainSpot/master/images/undraw_doctor_kw5l.svg"
+        },
+        {
+          "text": "most mental disorders are diagnosed between ages 5-20",
+          "image": "https://cdn.rawgit.com/akeshavan/brainSpot/master/images/undraw_fatherhood_7i19.svg"
+        },
+        {
+          "text": "the healthy brain network is collecting brain MRI scans \n of adolescents with mental health disorders",
+          "image": "https://cdn.rawgit.com/akeshavan/brainSpot/master/images/mri-1485929.svg"
+        },
+        {
+          "text": "can brain images help us understand mental health?",
+          "image": "https://s3-us-west-2.amazonaws.com/akeshavan-mindcontrol/hbnSplat/sub-NDARLF283KJX/tiles/base_sag_123.png"
+        },
+        {
+          "text": "to find out, scientists need your help \n to measure the brain",
+          "image": "https://cdn.rawgit.com/akeshavan/brainSpot/master/images/SwipesForScience.svg"
+        },
+        {
+          "text": "here is an mri of the the head",
+          "image": "https://cdn.rawgit.com/akeshavan/brainSpot/00d3b78e/images/brainAlone.png"
+        },
+        {
+          "text": "a computer has colored the brain pixels red \n we count the pixels to measure the volume",
+          "image": "https://cdn.rawgit.com/akeshavan/brainSpot/00d3b78e/images/brainWithMask.png"
+        },
+        {
+          "text": "but sometimes, the computer messes up \n and colors outside the brain",
+          "image": "https://cdn.rawgit.com/akeshavan/brainSpot/18266a4f/images/outOfBounds01.png"
+        },
+        {
+          "text": "so we need your help to spot \n the problem areas",
+          "image": "https://cdn.rawgit.com/akeshavan/brainSpot/6f75832b/images/outOfBounds02.png"
+        }
+      ],
+      "examples": [
+        {
+          "text": "Are you ready to play?",
+          "tutorialCompleted": true
+        }
+      ]
+    }
+  }
+}
